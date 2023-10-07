@@ -18,6 +18,13 @@ function load_header(String $title, Array $css = []) {?>
     <!-- datatable -->
     <link rel="stylesheet" href="<?=base_url("assets/datatable/css/dataTables.dataTables.min.css")?>">
     
+    <link rel="stylesheet" href="<?=base_url("assets/css/main.css")?>">
+    <link rel="stylesheet" href="<?=base_url("assets/css/header.css")?>">
+    <link rel="stylesheet" href="<?=base_url("assets/css/footer.css")?>">
+
+    <?php foreach($css as $c) {?>
+    <link rel="stylesheet" href="<?=base_url("assets/css/{$c}.css")?>">
+    <?php }?>
 
 
 
@@ -26,28 +33,23 @@ function load_header(String $title, Array $css = []) {?>
 
     
 </head>
-<body>
+
+
+<body >
     
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg" style="background-color: #163A0A; color: white; ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="<?=base_url()?>"><img id="logo-img" src="<?=base_url ("assets/images/logo.png")?>" alt="" srcset=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+        <span class= "fs-2">
+          Alda'wah Producers Cooperative Payroll System
+        </span>
       </ul>
     </div>
   </div>
