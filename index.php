@@ -12,7 +12,7 @@ load_header("Aldawah", ["index"]);
 
 
     <div class="card p-3 shadow d-flex flex-column">
-        <form id="form-admin" action="" class="d-flex flex-column gap-3" style="width:300px;">
+        <form method="post" id="form-admin" class="d-flex flex-column gap-3" style="width:300px;">
             <span class="fw-bold fs-4">
                 Sign in as Admin
                 <hr>
@@ -20,22 +20,22 @@ load_header("Aldawah", ["index"]);
             
             <span class="d-flex flex-column">
                 <label for="">Username</label>
-                <input class="form-control" type="text" name="" id="">
+                <input class="form-control" type="text" name="uname" id="a-uname">
             </span>
             <span class="d-flex flex-column">
                 <label for="">Password</label>
-                <input class="form-control" type="password" name="" id="">
+                <input class="form-control" type="password" name="pword" id="a-pword">
 
             </span>
-            <span class="d-flex justify-content-between">
+            <span class="d-flex flex-row-reverse justify-content-between">
+                <button class="btn btn-success" id="btn-a-sign-in">Sign In</button>
                 <button class="btn btn-secondary">Clear</button>
-                <button class="btn btn-success">Sign In</button>
             </span>
             <span>
                 Forgot your Password? <a href="#">Click Here</a>
             </span>
         </form>
-        <form id="form-emp" action="" class="d-flex flex-column gap-3 hidden" style="width:300px;">
+        <form method="post" id="form-emp" class="d-flex flex-column gap-3 hidden" style="width:300px;">
             <span class="fw-bold fs-4">
                 Sign in as Employee 
                 <hr>
@@ -43,16 +43,16 @@ load_header("Aldawah", ["index"]);
             
             <span class="d-flex flex-column">
                 <label for="">Username</label>
-                <input class="form-control" type="text" name="" id="">
+                <input class="form-control" type="text" name="uname" id="e-uname">
             </span>
             <span class="d-flex flex-column">
                 <label for="">Password</label>
-                <input class="form-control" type="password" name="" id="">
+                <input class="form-control" type="password" name="pword" id="e-pword">
 
             </span>
-            <span class="d-flex justify-content-between">
+            <span class="d-flex flex-row-reverse justify-content-between">
+                <button class="btn btn-success" id="btn-e-sign-in">Sign In</button>
                 <button class="btn btn-secondary">Clear</button>
-                <button class="btn btn-success">Sign In</button>
             </span>
             <span>
                 Forgot your Password? <a href="#">Click Here</a>
@@ -69,17 +69,6 @@ load_header("Aldawah", ["index"]);
 
 </main>
 
-<script>
-    $("#btn-emp").on("click", function(e) {
-        $("#form-admin").addClass("hidden");
-        $("#form-emp").removeClass("hidden");
-    })
-    $("#btn-admin").on("click", function(e) {
-        $("#form-emp").addClass("hidden");
-        $("#form-admin").removeClass("hidden");
-    })
-</script>
-
 <?php
-load_footer();
+load_footer(['index']);
 ?>

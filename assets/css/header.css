@@ -3,3 +3,9 @@
     height: 80px;
     transform: rotate(-90deg);
 }
+
+@media (max-width: 680px) {
+    #webiste-name { 
+        display: none;
+    }
+}

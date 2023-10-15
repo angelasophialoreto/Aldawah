@@ -1,18 +1,20 @@
 @font-face {
     font-family: Roboto-Regular;
     src: url("../fonts/Roboto-Regular.ttf");
-  }
+}
 
 *,
 *::before,
 *::after{
     padding: 0;
     margin: 0;
-font-family: Roboto-Regular;
+    font-family: Roboto-Regular;
+    transition: all 0.3s;
 }
 
 body{
     height: 100vh;
+    background-color: #ADD1A1;
 }
 
 .hidden{
