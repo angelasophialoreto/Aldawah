@@ -1,5 +1,4 @@
 <?php
-require_once "constants.php";
 function load_header(String $title, array $css = [], $nav = false, $constants = []) { ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +24,7 @@ function load_header(String $title, array $css = [], $nav = false, $constants = 
     <link rel="stylesheet" href="<?= base_url("assets/css/footer.css") ?>">
 
     <!-- CUSTOM LINKED CSS -->
-    <?php foreach ($css as $c) {?>
+    <?php foreach ($css as $c) { ?>
     <link rel="stylesheet" href="<?= base_url("assets/css/{$c}.css") ?>">
     <?php } ?>
 

@@ -1,19 +1,16 @@
 <?php
-require_once "template/header.php";
-require_once "template/footer.php";
+require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", ["index"]);
+load_header("Aldawah", ["index","animations"], false, []);
 ?>
 
 
 <main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center m-5">
-
-
-    <div class="card p-3 shadow d-flex flex-column">
+    <div class="card p-3 shadow d-flex flex-column" id="form-container">
         <form method="post" id="form-admin" class="d-flex flex-column gap-3" style="width:300px;">
-            <span class="fw-bold fs-4">
+            <span class="fw-bold fs-4" id="title-admin">
                 Sign in as Admin
                 <hr>
             </span>
@@ -36,7 +33,7 @@ load_header("Aldawah", ["index"]);
             </span>
         </form>
         <form method="post" id="form-emp" class="d-flex flex-column gap-3 hidden" style="width:300px;">
-            <span class="fw-bold fs-4">
+            <span class="fw-bold fs-4" id="title-employee">
                 Sign in as Employee 
                 <hr>
             </span>
@@ -58,8 +55,6 @@ load_header("Aldawah", ["index"]);
                 Forgot your Password? <a href="#">Click Here</a>
             </span>
         </form>
-
-
         <hr>
         <div class="d-flex justify-content-between">
             <button id="btn-admin" class="btn btn-outline-secondary">Admin</button>
@@ -70,5 +65,5 @@ load_header("Aldawah", ["index"]);
 </main>
 
 <?php
-load_footer(['index']);
+load_footer(["index"]);
 ?>

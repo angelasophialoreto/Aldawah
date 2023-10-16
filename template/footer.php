@@ -1,8 +1,7 @@
 <?php
-require_once "constants.php";
 function load_footer(array $js = []) {?>
 
-<footer class="d-flex flex-wrap justify-content-around gap-5">
+<footer class="d-flex flex-wrap justify-content-around gap-5 mt-5">
     <div class="d-flex flex-column gap-2">
         <img id="logo-img-footer" src="<?= base_url("assets/images/logo.png") ?>" alt="" srcset="">
         <p class="fw-bold fs-5">

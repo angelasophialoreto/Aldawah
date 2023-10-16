@@ -1,1 +1,1 @@
-const base_url = "http://localhost/Aldawah/";
+const base_url = "https://localhost/Aldawah/";

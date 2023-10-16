@@ -3,12 +3,14 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", [], false, []);
+load_header("Aldawah", [], true, []);
 ?>
 
-<main>
 
+<main>
+    
 </main>
+
 
 <?php
 load_footer([]);
