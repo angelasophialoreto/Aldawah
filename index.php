@@ -3,7 +3,7 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", ["index","animations"], false, []);
+load_header("Aldawah", ["index"], false, []);
 ?>
 
 

@@ -52,7 +52,7 @@ function load_footer(array $js = []) {?>
 <script src="<?= base_url("assets/fontawesome/js/all.min.js") ?>"></script>
 
 <!-- DATATABLE -->
-<script src="<?= base_url("assets/datatable/js/dataTables.dataTables.min.js") ?>"></script>
+<script src="<?= base_url("assets/datatables/datatables.min.js") ?>"></script>
 
 <!-- CUSTOM JS -->
 <?php foreach ($js as $j) { ?>

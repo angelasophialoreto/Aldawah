@@ -16,12 +16,13 @@ function load_header(String $title, array $css = [], $nav = false, $constants = 
     <link rel="stylesheet" href="<?= base_url("assets/fontawesome/css/all.min.css") ?>">
 
     <!-- DATATABLE -->
-    <link rel="stylesheet" href="<?= base_url("assets/datatable/css/dataTables.dataTables.min.css") ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/datatables/datatables.min.css") ?>">
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="<?= base_url("assets/css/main.css") ?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/header.css") ?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/footer.css") ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/animations.css") ?>">
 
     <!-- CUSTOM LINKED CSS -->
     <?php foreach ($css as $c) { ?>
@@ -33,6 +34,8 @@ function load_header(String $title, array $css = [], $nav = false, $constants = 
 
     <!-- CUSTOM JS -->
     <script src="<?= base_url('assets/js/constants.js')?>"></script>
+    <script src="<?= base_url('assets/js/header.js')?>"></script>
+    <script src="<?= base_url('assets/js/alert.js')?>"></script>
 
     <!-- CONSTANTS -->
     <script>
@@ -61,19 +64,19 @@ function load_header(String $title, array $css = [], $nav = false, $constants = 
                 <div class="collapse navbar-collapse p-2" id="navbarNavDarkDropdown">
                     <ul class="navbar-nav gap-1">
                         <li class="nav-item">
-                            <button class="btn btn-secondary"><i class="fa-solid fa-house"></i> Home</button>
+                            <button onclick="goto_page('admin')" class="btn btn-secondary"><i class="fa-solid fa-house"></i> Home</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary"><i class="fa-solid fa-users"></i> Employee</button>
+                            <button onclick="goto_page('employee-info')" class="btn btn-secondary"><i class="fa-solid fa-users"></i> Employee</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary"><i class="fa-solid fa-money-bill-wave"></i> Payroll</button>
+                            <button onclick="goto_page('payroll')" class="btn btn-secondary"><i class="fa-solid fa-money-bill-wave"></i> Payroll</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary"><i class="fa-solid fa-file"></i> Report</button>
+                            <button onclick="goto_page('salary-report')" class="btn btn-secondary"><i class="fa-solid fa-file"></i> Report</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary"><i class="fa-solid fa-circle-info"></i> About</button>
+                            <button onclick="goto_page('about')" class="btn btn-secondary"><i class="fa-solid fa-circle-info"></i> About</button>
                         </li>
                     </ul>
                 </div>
