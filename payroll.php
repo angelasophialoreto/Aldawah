@@ -53,7 +53,7 @@ load_header("Aldawah", ["payroll"], true, []);
         </section>
     </div>
     <div class="card p-3">
-        <table id="dataTable">
+        <table id="dataTable" class="table table-hover">
             <thead>
                 <tr>
                     <th>ID</th>
