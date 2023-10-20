@@ -3,7 +3,7 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", ["home"], true, []);
+load_header("Aldawah | Employee", ["home"], true, []);
 ?>
 
 
@@ -47,7 +47,7 @@ load_header("Aldawah", ["home"], true, []);
                 <div class="profile d-flex align-items-center gap-2">
                     <div class="shadow" id="profile-image" style=" background-color: white; width: 60px; height: 60px; border-radius: 100px;"></div>
                     <div class="" id="profile-info">
-                        <div class="" id="fullname">Juan Dela Cruz</div>
+                        <div class="" id="fullname">Loreto, Angela Sophia</div>
                         <div class="" style="font-size: small; color: rgba(0,0,0,0.6);" id="role">Manager</div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ load_header("Aldawah", ["home"], true, []);
         <div class="p-0 col-3 block-holder d-flex flex-coloumn card">
             <div class="block-header fs-5 p-2" style="border-bottom: 1px solid rgba(0,0,0,0.3);">Task</div>
             <div class="block-body p-3">
-    
+                <div>- Wadhwani</div>
             </div>
         </div>
         <div class="p-0 col">

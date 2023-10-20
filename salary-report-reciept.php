@@ -8,7 +8,7 @@ load_header("Aldawah | Salary", [], true, []);
 
 
 <main class="card gap-2 m-3 p-3 align-items-center">
-    <div class="fs-3 align-self-start">Salary Report</div>
+    <div class="fs-3 align-self-start">Salary Report (Reciept)</div>
     <div class="">
         <div class="d-flex flex-column">
             <!-- <section class="d-flex justify-content-around gap-2">
@@ -19,11 +19,15 @@ load_header("Aldawah | Salary", [], true, []);
             </section> -->
             <section class="d-flex justify-content-around gap-2">
                 <div class="input-group flex-nowrap">
-                    <span class="input-group-text">Select class</span>
+                    <span class="input-group-text">Name</span>
                     <input type="text" class="form-control">
                 </div>
                 <div class="input-group flex-nowrap">
-                    <span class="input-group-text">Select employee</span>
+                    <span class="input-group-text">Bank No.</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text">Class</span>
                     <input type="text" class="form-control">
                 </div>
             </section>
@@ -33,12 +37,16 @@ load_header("Aldawah | Salary", [], true, []);
             <table id="dataTable" class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>Month</th>
                         <th>Salary</th>
-                        <th>Deduction</th>
-                        <th>Allowance</th>
+                        <th>T_All</th>
+                        <th>M_All</th>
+                        <th>W_All</th>
+                        <th>Leave</th>
+                        <th>L_Dedu</th>
+                        <th>DA</th>
+                        <th>HR</th>
                         <th>Netpay</th>
-                        <th>View detail</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,9 +56,11 @@ load_header("Aldawah | Salary", [], true, []);
                         <td>00:01</td>
                         <td>00:01</td>
                         <td>00:01</td>
-                        <td>
-                            <button class="btn btn-primary">View</button>
-                        </td>
+                        <td>00:01</td>
+                        <td>00:01</td>
+                        <td>00:01</td>
+                        <td>00:01</td>
+                        <td>00:01</td>
                     </tr>
                 </tbody>
             </table>
@@ -60,5 +70,5 @@ load_header("Aldawah | Salary", [], true, []);
 
 
 <?php
-load_footer(["salary-report"]);
+load_footer(["salary-report-reciept"]);
 ?>

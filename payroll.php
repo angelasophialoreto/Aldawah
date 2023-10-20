@@ -3,11 +3,11 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", ["payroll"], true, []);
+load_header("Aldawah | Payroll", ["payroll"], true, []);
 ?>
 
 
-<main class="d-flex flex-wrap gap-2 justify-content-center">
+<main class="d-flex flex-row flex-wrap gap-3 m-3">
     <div class="card p-3">
         <section class="d-flex justify-content-between gap-2">
             Salary: <span class="fw-bold" id="salary_value">00.00</span>
@@ -52,7 +52,7 @@ load_header("Aldawah", ["payroll"], true, []);
             Total Salary: <span class="fw-bold" id="total-salary_value">00.00</span>
         </section>
     </div>
-    <div class="card p-3">
+    <div class="card p-3 flex-grow-1">
         <table id="dataTable" class="table table-hover">
             <thead>
                 <tr>
@@ -64,15 +64,15 @@ load_header("Aldawah", ["payroll"], true, []);
             </thead>
             <tbody>
                 <tr>
-                    <td>0000001</td>
+                    <td>E-0001</td>
                     <td>Delacruz</td>
                     <td>Juan</td>
                     <td>10%</td>
                 </tr>
                 <tr>
-                    <td>0000002</td>
+                    <td>E-0002</td>
                     <td>Loreto</td>
-                    <td>Sophia</td>
+                    <td>Angela Sophia</td>
                     <td>10%</td>
                 </tr>
             </tbody>

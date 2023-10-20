@@ -3,16 +3,16 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", [], true, []);
+load_header("Aldawah | Employee", [], true, []);
 ?>
 
 
-<main class="m-1 card p-3 d-flex flex-column gap-2">
-    <div id="myheader" class="p-3">
+<main class="m-1 d-flex flex-column gap-2">
+    <!-- <div id="myheader" class="p-3">
         <button class="btn btn-outline-secondary">Add Employee</button>
         <button class="btn btn-outline-secondary">Employee Details</button>
         <button class="btn btn-outline-secondary">Add Class</button>
-    </div>
+    </div> -->
     <form method="post" class="card p-3 align-self-center d-flex flex-column gap-2">
         <input type="hidden" name="id" value="E-0001">
         <div class="d-flex justify-content-around align-items-center gap-2" style="border-bottom: 1px solid rgba(0,0,0,0.6);">

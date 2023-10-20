@@ -1,0 +1,3 @@
+$("#dataTable").DataTable({
+    "bLengthChange": false
+});

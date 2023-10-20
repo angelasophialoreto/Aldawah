@@ -3,7 +3,7 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", ["index"], false, []);
+load_header("Aldawah | Login", ["index"], false, []);
 ?>
 
 
@@ -25,11 +25,11 @@ load_header("Aldawah", ["index"], false, []);
 
             </span>
             <span class="d-flex flex-row-reverse justify-content-between">
-                <button class="btn btn-success" id="btn-a-sign-in">Sign In</button>
-                <button class="btn btn-secondary">Clear</button>
+                <button type="button" class="btn btn-success" id="btn-a-sign-in" data-acc_type="a">Sign In</button>
+                <button type="button" class="btn btn-secondary">Clear</button>
             </span>
             <span>
-                Forgot your Password? <a href="#">Click Here</a>
+                Forgot your Password? <a href="#" onclick="forgotPass(this)">Click Here</a>
             </span>
         </form>
         <form method="post" id="form-emp" class="d-flex flex-column gap-3 hidden" style="width:300px;">
@@ -48,11 +48,11 @@ load_header("Aldawah", ["index"], false, []);
 
             </span>
             <span class="d-flex flex-row-reverse justify-content-between">
-                <button class="btn btn-success" id="btn-e-sign-in">Sign In</button>
-                <button class="btn btn-secondary">Clear</button>
+                <button type="button" class="btn btn-success" id="btn-e-sign-in" data-acc_type="e">Sign In</button>
+                <button type="button" class="btn btn-secondary">Clear</button>
             </span>
             <span>
-                Forgot your Password? <a href="#">Click Here</a>
+                Forgot your Password? <a href="#" onclick="forgotPass(this)">Click Here</a>
             </span>
         </form>
         <hr>
@@ -65,5 +65,5 @@ load_header("Aldawah", ["index"], false, []);
 </main>
 
 <?php
-load_footer(["index"]);
+load_footer(["modal", "index"]);
 ?>

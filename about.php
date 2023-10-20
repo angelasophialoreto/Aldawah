@@ -3,7 +3,7 @@ require_once "template/connector.php";
 ?>
 
 <?php
-load_header("Aldawah", [], true, []);
+load_header("Aldawah | About", [], true, []);
 ?>
 
 

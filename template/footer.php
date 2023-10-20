@@ -4,9 +4,9 @@ function load_footer(array $js = []) {?>
 <footer class="d-flex flex-wrap justify-content-around gap-5 mt-5">
     <div class="d-flex flex-column gap-2">
         <img id="logo-img-footer" src="<?= base_url("assets/images/logo.png") ?>" alt="" srcset="">
-        <p class="fw-bold fs-5">
+        <!-- <p class="fw-bold fs-5">
             About Us
-        </p>
+        </p> -->
         <span>
             Intent to provide our farmers and fellow Filipinos with high-quality products and services. 💚
         </span>
@@ -46,7 +46,7 @@ function load_footer(array $js = []) {?>
 </footer>
 
 <!-- BOOTSTRAP -->
-<script src="<?= base_url("assets/bootstrap/js/bootstrap.min.js") ?>"></script>
+<script src="<?= base_url("assets/bootstrap/js/bootstrap.bundle.min.js") ?>"></script>
 
 <!-- FONTAWESOME -->
 <script src="<?= base_url("assets/fontawesome/js/all.min.js") ?>"></script>
